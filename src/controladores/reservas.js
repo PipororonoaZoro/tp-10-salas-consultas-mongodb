@@ -42,7 +42,11 @@ function crearControladorReservas(servicioReservas) {
           }
 
           const ordenLimpio = valorOrden.trim();
-          const ordenesValidas = ["estudiante", "personas-asc", "personas-desc"];
+          const ordenesValidas = [
+            "estudiante",
+            "personas-asc",
+            "personas-desc",
+          ];
 
           if (!ordenesValidas.includes(ordenLimpio)) {
             return res.status(400).json({
